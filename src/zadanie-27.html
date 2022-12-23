@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<!-- META -->
+	<meta name="Author" content="Kamil Polit" />
+	<meta charset="UTF-8" />
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		var samolot = {
+			nazwa: ' F-22 Raptor',
+			predkosc_max: '2 414 km/h',
+			zasieg: '3 000 km',
+			samolot_wyswietl_polit: function () {
+				document.write(this.nazwa + ' Predkosc' + this.predkosc_max + ' Wysokosc: ' + this.zasieg)
+			}
+		}
+
+		samolot.samolot_wyswietl_polit();
+		samolot.cena = "216 milionów dolarów";
+		samolot.samolot_pokarz_polit = function () { alert('CEna: ' + this.cena) }
+		samolot.samolot_pokarz_polit();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title> Przykład użycia pętli </title>
+	<script language="JavaScript">
+		var x = parseInt(prompt("Ile razy wyswietlic napis: ", ""));
+		var inicjaly = prompt("Podaj inicjaly: ", "");
+
+		for (var i = 0; i < x; i++) {
+			for (var k = 1; k <= i; k++) {
+				document.write("&nbsp&nbsp&nbsp&nbsp&nbsp");
+			}
+			document.write(inicjaly + "<br>");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

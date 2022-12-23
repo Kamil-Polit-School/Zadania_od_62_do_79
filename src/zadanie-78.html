@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var liczba1 = parseInt(prompt("Podaj pierwsza liczbe: ", ""));
+		var liczba2 = parseInt(prompt("Podaj druga liczbe: ", ""));
+
+		if (liczba1 > liczba2) {
+			for (var i = liczba1; i >= liczba2; i--) {
+				if ((i % 2) != 0) document.write("<span style=\"color: blue; font-size: 12px;\"> " + i + "</span>");
+			}
+		} else if (liczba1 < liczba2) {
+			for (var i = liczba1; i <= liczba2; i++) {
+				if ((i % 2) != 0) document.write("<span style=\"color: red; font-size: 24px;\"> " + i + "</span>");
+			}
+		} else {
+			confirm("Liczby sa rowne!")
+		}
+
+	</script>
+	<title> Zadanie 78 </title>
+</head>
+<body>
+
+</body>
+</html>

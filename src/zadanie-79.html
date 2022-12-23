@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zadanie 79 </title>
+
+    <script type="text/javascript">
+        let x_max = parseFloat(prompt("Podaj X MAX:", ""));
+        let x_min = parseFloat(prompt("Podaj X MIN:", ""));
+        let y_max = parseFloat(prompt("Podaj Y MAX:", ""));
+        let y_min = parseFloat(prompt("Podaj Y MIN:", ""));
+
+        document.write("x_MAX: " + x_max + "<br /> x_MIN: " + x_min + "<br /> y_MAX: " + y_max + " <br /> y_MIN: " + y_min + "<br />");
+        
+        let max_distance = 0;
+        for (let y = y_max; y >= y_min; y--) {
+            for (let x = x_min; x <= x_max; x++) {
+                var distance = Math.abs(Math.sqrt((x * x) + (y * y)));
+                if (distance > max_distance) max_distance = distance;
+                document.write("(" + x + ", " + y + ")");
+            }
+            document.write("<br />");
+        }
+
+        document.write("<br />< br /> " + max_distance.toFixed(2));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

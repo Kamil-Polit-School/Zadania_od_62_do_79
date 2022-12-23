@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<!-- META -->
+	<meta name="Author" content="Kamil Polit" />
+	<meta charset="UTF-8" />
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		function pracownik(imie, nazwisko, wiek, stanowisko) {
+			this.imie = imie;
+			this.nazwisko = nazwisko;
+			this.wiek = wiek;
+			this.stanowisko = stanowisko
+		}
+		
+		pracownik.prototype.przedstaw_sie = function () { alert("Mam na imie " + this.imie + " " + this.nazwisko + " mam " + this.wiek + " lat i pracoje na stanowisku " + this.stanowisko); }
+		pracownik.prototype.jak_sie_nazywasz = function() { alert("Mam na imie " + this.imie + " " + this.nazwisko); }
+
+		pracownik1 = new pracownik("Kamil", "Polit", "25", "Programista")
+		pracownik2 = new pracownik("Lukasz", "Brun", "25", "Marketing")
+		pracownik3 = new pracownik("John", "Lee", "25", "Prawnik")
+
+		pracownik2.przedstaw_sie()
+		pracownik1.przedstaw_sie()
+		pracownik3.przedstaw_sie()
+
+		pracownik1.jak_sie_nazywasz()
+		pracownik2.jak_sie_nazywasz()
+	</script>
+</head>
+<body>
+
+</body>
+</html>

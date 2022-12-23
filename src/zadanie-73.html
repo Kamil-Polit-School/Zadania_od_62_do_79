@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+
+		function poziom_gwiazdek() {
+			for (var i = 0; i < b_pol; i++) {
+				document.write("*");
+			}
+		}
+
+		let a_pol = (prompt("Podaj imie: ", "").length % 4) + 5;
+		let b_pol = (prompt("Podaj nazwisko: ", "").length % 6) + 20;
+
+		poziom_gwiazdek();
+
+		for (var y = 0; y < (a_pol - 2); y++) {
+			document.write("<br />*");
+			for (var i = 0; i < (b_pol - 2); i++) {
+				document.write("&nbsp;&nbsp;");
+			}
+			document.write("*");
+			
+		}
+
+		document.write("<br />");
+		poziom_gwiazdek();
+	</script>
+	<title> Zadanie 71 </title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<!-- META -->
+	<meta name="Author" content="Kamil Polit" />
+	<meta charset="UTF-8" />
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		function kliknieto() {
+			var x = prompt("Podaj wartosc: ", "");
+			if ((x == 1) || (x.toLowerCase() == "czerwony")) document.write("<h7 style=\"color: red;\"> Wczytałeś kolor czerwony </h7>");
+			else if ((x == 2) || (x.toLowerCase() == "niebieski")) document.write("<h1 style=\"color: blue;\"> Wczytałeś kolor niebieski </h1>");
+		}
+	</script>
+</head>
+<body>
+	<h1 style="color: green;">MENU</h1>
+	<h2 style="color: red; ">1. Czerwony</h2>
+	<h2 style="color: blue; ">1. Niebieski</h2>
+	<button type="button" onclick="kliknieto();" />
+</body>
+</html>
